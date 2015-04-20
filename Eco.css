@@ -1,0 +1,50 @@
+* {
+	font-family: "Open Sans Normal", sans-serif;
+}
+
+body {
+	margin: 0px;	/*for no silly edges */
+	padding: 0px;
+	min-width: 1000px;
+}
+
+#header, #header #logo {
+	background-color: #101010;
+}
+
+#header {
+	width: 100%;
+	height: 40px;
+}
+
+#header #logo {
+	float: left;
+	height: 80px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#navigation a, #navigation a:visited {
+	font-size: 20px;
+	color: #E6F0FF;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	margin-left: 18px;
+	margin-right: 18px;
+	margin-top: 7px;
+}
+
+h1, h2 {
+	margin: 0;
+	padding: 0;
+	font-family: "Encode Sans Compressed", sans-serif;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 35px;
+}
