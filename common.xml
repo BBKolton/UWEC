@@ -1,13 +1,21 @@
-<html>
-	<head>
-		<link href='eco.css' type='text/css' rel='stylesheet' /> 
-		<link href='home.css' type='text/css' rel='stylesheet' /> 
-		<link href='imgs/favicon.png' type='image/png' rel='icon' /> 
-		<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css' />
-	</head>
-</html>
+<top>
+	<link href='eco.css' type='text/css' rel='stylesheet' /> 
+	<link href='imgs/favicon.png' type='image/png' rel='icon' /> 
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css' />
+</top>
 <header>
-	<div>
-		hello
+	<div id="header">
+		<a href="home.html">
+			<img src="imgs/nameWhite.png" id="name" alt="UW EcoCAR" />
+			<img src="imgs/logo.png" id="logo" alt="UW EcoCAR logo" />
+		</a>
+		<div id="navigation">
+			<a class="sweepbot" href="project..html"><div><p>Project</p></div></a>
+			<a class="sweepbot" href="model..html"><div><p>Model</p></div></a>
+			<a class="sweepbot" href="sponsors..html"><div><p>Sponsors</p></div></a>
+			<a class="sweepbot" href="media..html"><div><p>Media</p></div></a>
+			<a class="sweepbot" href="ec2..html"><div><p>EC2</p></div></a>
+			<a class="sweepbot" href="contacts..html"><div><p>Contact</p></div></a>
+		</div>
 	</div>
 </header>

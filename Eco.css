@@ -6,6 +6,7 @@ body {
 	margin: 0px;	/*for no silly edges */
 	padding: 0px;
 	min-width: 1000px;
+	background-color: #777777;
 }
 
 a {
@@ -52,6 +53,29 @@ a {
 	text-align: center;
 }
 
+.break {
+	width: 100%;
+	height: 30px;
+	background: #202020;
+}
+
+#post {
+	width: 1000px;
+	background: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 90px;
+	margin-bottom: 30px;
+}
+
+#post h1, #post h2, #post p {
+	padding: 20px;
+}
+
+#post img {
+	width: 100%;
+}
+
 h1, h2 {
 	margin: 0;
 	padding: 0;
@@ -64,6 +88,11 @@ h1 {
 
 h2 {
 	font-size: 35px;
+}
+
+p {
+	font-size: 18px;
+	margin: 0px;
 }
 
 .link {
