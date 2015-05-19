@@ -1,97 +1,92 @@
-#highlight {
-	background: url("imgs/CameroMedium.png") center top;
-	width: 100%;
-	height: 450px;
-	background-size: 100%;
-	background-size: cover;
+.header {
+    background: url("img/CameroMedium.png");
+    color: white;
+    height: 50%;
 }
 
-#highlight #blurb {
-	height: 100%;
-	padding-left: 18px;
-	padding-right: 18px;
-	color: white;
-	width: 30%;
-	float: right;
-	background-color: rgba(0, 0, 0, .6); /*for transparency*/
+.navbar{
+    padding-bottom: 0.1%;
 }
 
-#highlight h1 {
-	margin: 0px;
-	margin-top: 30px;
-
+.sponsorBar h4, .EC3intro h4, .sponsorBarMobile h4 {
+    text-align: center;
 }
 
-.spacer {
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+.sponsorBar, .sponsorBarMobile {
+    background-color: lightgrey;
 }
 
-/*Content Section*/
-
-.bisection {
-	width: 48.5%;
+#headerText {
+    background-color: black;
+    opacity: 0.7;
+    padding-bottom: 3%;
 }
 
-#break {
-	width: 100%;
-	height: 30px;
-	background: #202020;
+body{
+    padding-top: 2%;
+    background: url("img/QuadGold.jpg");
+    overflow-x: hidden;
 }
 
-body {
-	background: url("imgs/QuadBW.jpg") center center;
-	background-size: cover;
-	background-attachment: fixed;
+footer {
+    background-color: black;
 }
 
-#content > div {
-	float: left;
-	background: #202020;
-	margin-top: 30px;
-	overflow: hidden;
+.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-#content > div * {
-	color: white;
+.pageContent h4 {
+    text-align: center;
 }
 
-#team {
-	margin-left: 3%;
+#column1, #column2, #column3, #column4, .header1, .text1, .header2, .text2, #columna, #columnb {
+    background-color: darkgrey;
+    padding-bottom: 1%;
 }
 
-#team img {
-	width: 445px;
-	margin: 18px;
-	margin-top: 0px;
+.pageText {
+    padding-bottom: 2%;
 }
 
-#content h2, #content p {
-	padding: 18px;
+.sponsorBar {
+    padding-bottom: 1%;
 }
 
-.decoration {
-	display: block;
-	margin-bottom: 18px;
-	margin-top: 18px;
+.mobile, .sponsorBarMobile {
+    display: none
 }
 
-#sponsors {
-	clear: both;
-	margin-bottom: 20px;
+
+@media screen and (max-width: 1000px) {
+    .mobile {
+        display: inline;
+    }
+
+    .pageText, .pageContent {
+        display: none;
+    }
+
+    .sponsorBar {
+        display: none;
+    }
+
+    .sponsorBarMobile {
+        display: inline;
+    }
+
+    #headerText{
+        background-color: transparent;
+    }
+
+    body {
+        padding-top: 6%;
+    }
 }
 
-#sponsorimgs img:first-child {
-	clear: left;
-}
-
-#sponsorimgs img {
-	float: left;
-	margin: 25px;
-}
-
-#content h2 {
-/*	background-color: black;
-	color: #a55be3;*/
+@media screen and (min-width: 800px) {
+    body {
+        padding-top: 5%;
+    }
 }

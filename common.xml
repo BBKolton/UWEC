@@ -1,21 +1,44 @@
 <top>
-	<link href='eco.css' type='text/css' rel='stylesheet' /> 
-	<link href='imgs/favicon.png' type='image/png' rel='icon' /> 
-	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css' />
+    <link href='eco.css' type='text/css' rel='stylesheet'/>
+    <link href='imgs/favicon.png' type='image/png' rel='icon'/>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'/>
 </top>
 <header>
-	<div id="header">
-		<a href="home.html">
-			<img src="imgs/nameWhite.png" id="name" alt="UW EcoCAR" />
-			<img src="imgs/logo.png" id="logo" alt="UW EcoCAR logo" />
-		</a>
-		<div id="navigation">
-			<a class="sweepbot" href="project..html"><div><p>Project</p></div></a>
-			<a class="sweepbot" href="model..html"><div><p>Model</p></div></a>
-			<a class="sweepbot" href="sponsors..html"><div><p>Sponsors</p></div></a>
-			<a class="sweepbot" href="media..html"><div><p>Media</p></div></a>
-			<a class="sweepbot" href="ec2..html"><div><p>EC2</p></div></a>
-			<a class="sweepbot" href="contacts..html"><div><p>Contact</p></div></a>
-		</div>
-	</div>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand" data-menuanchor="1">EcoCar3</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-main-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" role="tablist">
+                <li data-menuanchor="2" id="projectMenu">
+                    <a href="#">Projects</a>
+                </li>
+                <li data-menuanchor="3" id="modelMenu">
+                    <a href="#">Model</a>
+                </li>
+                <li data-menuanchor="4" id="sponsorMenu">
+                    <a href="index.html#">Sponsors</a>
+                </li>
+                <li data-menuanchor="5" id="mediaMenu">
+                    <a href="index.html#">Media</a>
+                </li>
+                <li data-menuanchor="6" id="applyMenu">
+                    <a href="index.html#">Apply</a>
+                </li>
+                <li data-menuanchor="7" id="ec2Menu">
+                    <a href="index.html#">EC2</a>
+                </li>
+                <li data-menuanchor="9" id="contactMenu">
+                    <a href="index.html#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 </header>
