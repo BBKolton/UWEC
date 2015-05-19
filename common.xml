@@ -10,12 +10,13 @@
 			<img src="imgs/logo.png" id="logo" alt="UW EcoCAR logo" />
 		</a>
 		<div id="navigation">
-			<a class="sweepbot" href="project..html"><div><p>Project</p></div></a>
-			<a class="sweepbot" href="model..html"><div><p>Model</p></div></a>
-			<a class="sweepbot" href="sponsors..html"><div><p>Sponsors</p></div></a>
-			<a class="sweepbot" href="media..html"><div><p>Media</p></div></a>
-			<a class="sweepbot" href="ec2..html"><div><p>EC2</p></div></a>
-			<a class="sweepbot" href="contacts..html"><div><p>Contact</p></div></a>
+			<a class="sweepbot" href="project.html"><div><p>Project</p></div></a>
+			<a class="sweepbot" href="model.html"><div><p>Model</p></div></a>
+			<a class="sweepbot" href="sponsors.html"><div><p>Sponsors</p></div></a>
+			<a class="sweepbot" href="media.html"><div><p>Media</p></div></a>
+			<a class="sweepbot" href="ec2.html"><div><p>EC2</p></div></a>
+			<a class="sweepbot" href="contacts.html"><div><p>Contact</p></div></a>
+			<a class="sweepbot" href="apply.html"><div><p>Apply</p></div></a>
 		</div>
 	</div>
 </header>
