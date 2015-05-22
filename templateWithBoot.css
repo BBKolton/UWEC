@@ -1,0 +1,70 @@
+.Title h1 {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+body {
+    background-color: #777;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#titleHere {
+    background-color: white;
+}
+
+#teamImageHere {
+    background: url("imgs/team.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#imageHere {
+    background: url("imgs/CameroLarge2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;}
+
+#image {
+    opacity: 0;
+}
+
+footer {
+    background-color: black;
+    color: #777;
+    padding-bottom: 1%;
+}
+
+@media screen and (max-width: 990px) {
+    main {
+        background-color: white;
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    #imageHere {
+        width: 100%;
+    }
+
+    footer img {
+        height: 6%;
+        width: 9%;
+    }
+
+    main img {
+        height: 33%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .Title {
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+
+    .header {
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+
+    }
+}
+

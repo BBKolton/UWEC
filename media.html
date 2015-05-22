@@ -1,0 +1,100 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='templateWithBoot.css' type='text/css' rel='stylesheet'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="eco.js"></script>
+</head>
+
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand" data-menuanchor="1">EcoCar3</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-main-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" role="tablist">
+                    <li data-menuanchor="2" id="projectMenu"><a href="project.html">Projects</a></li>
+                    <li data-menuanchor="3" id="modelMenu"><a href="model.html">Model</a></li>
+                    <li data-menuanchor="4" id="sponsorMenu"><a href="sponsors.html#">Sponsors</a></li>
+                    <li data-menuanchor="5" id="mediaMenu"><a href="media.html#">Media</a></li>
+                    <li data-menuanchor="6" id="applyMenu"><a href="https://catalyst.uw.edu/catalyst/chooser/1d95b7f6290c057640861012dec50856">Apply</a></li>
+                    <li data-menuanchor="7" id="ec2Menu"><a href="ec2.html#">EC2</a></li>
+                    <li data-menuanchor="9" id="contactMenu"><a href="contacts.html#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--There is only one major bug that I've found with the current template. When you go into mobile form, the image
+will not go across the page. This will leave some white space on the edges next to the image.
+-->
+
+<body>
+<main class="container-fluid">
+
+    <!--This is a placeholder image that doesn't actually show up. Rather it allows the background image to show up in order
+    to maintain the same background as the content field. So the showing background image is in the css labeled "imageHere". Since CSS
+    is required for it to show, please name your image as pageTile + "imageHere" so it won't be accidentally overwritten.
+    -->
+    <section class="row header">
+        <div class="container">
+            <div class="col-lg-1" id="sideBar1">
+            </div>
+            <div class="col-lg-10" id="imageHere">
+                <img src="imgs/CameroLarge2.jpg" height="66%" width="100%" id="image">
+            </div>
+            <div class="col-lg-1" id="sideBar2">
+            </div>
+        </div>
+    </section>
+
+    <!--This is the row for the title of the Web Page-->
+
+    <section class="row Title">
+        <div class="container">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="titleHere">
+                <h1>EC3 Team in the News</h1>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </section>
+
+    <!--This is where the content goes. If you plan on using columns within this row, you will have to manually change the mobile form since the mobile form is
+    pretty much a collapsed version of the grid format.
+    -->
+    <section class="row Content">
+        <div class="container">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="textHere">
+
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </section>
+
+</main>
+</body>
+
+<footer class="container-fluid">
+    <section class="row footer">
+        <div class="container">
+            <div class="row Links">
+                <div class="col-md-9"></div>
+                <div class="col-md-3">
+                    <a href="www.facebook.com/UWEcoCAR2"><img src="imgs/Facebook.png" width="16%" height="6%" class="pull-right"></a>
+                    <a href="www.twitter.com/uwecocar2"><img src="imgs/Twitter.png" width="16%" height="6%" class="pull-right"></a>
+                    <a href="mailto:uwecocar3@gmail.com"><img src="imgs/Gmail.png" width="16%" height="6%" class="pull-right"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
