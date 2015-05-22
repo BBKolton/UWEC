@@ -6,6 +6,7 @@
 </top>
 
 <header>
+<<<<<<< HEAD
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header page-scroll">
@@ -30,3 +31,21 @@
     </div>
 </nav>
 </header>-->
+=======
+	<div id="header">
+		<a href="home.html">
+			<img src="imgs/nameWhite.png" id="name" alt="UW EcoCAR" />
+			<img src="imgs/logo.png" id="logo" alt="UW EcoCAR logo" />
+		</a>
+		<div id="navigation">
+			<a class="sweepbot" href="project.html"><div><p>Project</p></div></a>
+			<a class="sweepbot" href="model.html"><div><p>Model</p></div></a>
+			<a class="sweepbot" href="sponsors.html"><div><p>Sponsors</p></div></a>
+			<a class="sweepbot" href="media.html"><div><p>Media</p></div></a>
+			<a class="sweepbot" href="ec2.html"><div><p>EC2</p></div></a>
+			<a class="sweepbot" href="contacts.html"><div><p>Contact</p></div></a>
+			<a class="sweepbot" href="apply.html"><div><p>Apply</p></div></a>
+		</div>
+	</div>
+</header>
+>>>>>>> 4e43f50d6b68e2443f23d7e15a93d97fb9505c32
