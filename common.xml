@@ -1,37 +1,10 @@
-<!--
 <top>
     <link href='eco.css' type='text/css' rel='stylesheet' />
     <link href='imgs/favicon.png' type='image/png' rel='icon' />
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css' />
 </top>
 
-<header>
-<<<<<<< HEAD
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar" />
-                <span class="icon-bar" />
-                <span class="icon-bar" />
-            </button>
-            <a href="#" class="navbar-brand" data-menuanchor="1">EcoCar3</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-main-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right" role="tablist">
-                <li data-menuanchor="2" id="projectMenu"><a href="project.html">Projects</a></li>
-                <li data-menuanchor="3" id="modelMenu"><a href="model.html">Model</a></li>
-                <li data-menuanchor="4" id="sponsorMenu"><a href="sponsors.html#">Sponsors</a></li> //
-                <li data-menuanchor="5" id="mediaMenu"><a href="media.html#">Media</a></li> //
-                <li data-menuanchor="6" id="applyMenu"><a href="apply.html#">Apply</a></li> //
-                <li data-menuanchor="7" id="ec2Menu"><a href="ec2.html#">EC2</a></li> //
-                <li data-menuanchor="9" id="contactMenu"><a href="contacts.html#">Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-</header>-->
-=======
+<head>
 	<div id="header">
 		<a href="home.html">
 			<img src="imgs/nameWhite.png" id="name" alt="UW EcoCAR" />
@@ -48,4 +21,3 @@
 		</div>
 	</div>
 </header>
->>>>>>> 4e43f50d6b68e2443f23d7e15a93d97fb9505c32
