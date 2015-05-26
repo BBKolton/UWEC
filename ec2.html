@@ -1,0 +1,245 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='templateWithBoot.css' type='text/css' rel='stylesheet'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="eco.js"></script>
+</head>
+
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="home.html" class="navbar-brand" data-menuanchor="1">EcoCar3</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-main-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" role="tablist">
+                    <li data-menuanchor="2" id="projectMenu"><a href="project.html">Projects</a></li>
+                    <li data-menuanchor="3" id="modelMenu"><a href="model.html">Model</a></li>
+                    <li data-menuanchor="4" id="sponsorMenu"><a href="sponsors.html#">Sponsors</a></li>
+                    <li data-menuanchor="5" id="mediaMenu"><a href="media.html#">Media</a></li>
+                    <li data-menuanchor="6" id="applyMenu"><a
+                            href="https://catalyst.uw.edu/catalyst/chooser/1d95b7f6290c057640861012dec50856">Apply</a>
+                    </li>
+                    <li data-menuanchor="7" id="ec2Menu"><a href="ec2.html#">EC2</a></li>
+                    <li data-menuanchor="8" id="contactMenu"><a href="contacts.html#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--There is only one major bug that I've found with the current template. When you go into mobile form, the image
+will not go across the page. This will leave some white space on the edges next to the image.
+-->
+
+<body>
+<main class="container-fluid">
+
+    <!--This is a placeholder image that doesn't actually show up in the html. Rather it allows the background image to show up in order
+    to maintain the same background as the content field. So the showing background image is in the css labeled "imageHere". Since CSS
+    is required for it to show, please name your image as pageTile + "imageHere" so it won't be accidentally overwritten.
+
+    Another potential problem is that we need that images to be bigger in size. If it is smaller than the width of the text, then the image will
+    be cut off
+    -->
+    <section class="row header">
+        <div class="container">
+            <div class="col-lg-1" id="sideBar1">
+            </div>
+            <div class="col-lg-10" id="ec2ImageHere">
+                <img src="imgs/CameroLarge2.jpg" height="55%" width="100%" id="image">
+            </div>
+            <div class="col-lg-1" id="sideBar2">
+            </div>
+        </div>
+    </section>
+
+    <!--This is the row for the title and contents of the Web Page-->
+
+    <section class="row Title">
+        <div class="container">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="titleHere">
+                <section class="row imagetitle">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <img src="imgs/ec2logo.jpg" height="15%" width="85%" class="center-block">
+                    </div>
+                    <div class="col-md-4"></div>
+                </section>
+                <section class="row imagetitle">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <h3 align="center"> The UW EcoCAR2 team competed in the 3-year EcoCAR2 competition to convert a
+                            2013 Chevy Malibu
+                            into an advanced hybrid electric vehicle. Read more to learn about the design and
+                            competition results. </h3>
+                        <hr>
+                    </div>
+                    <div class="col-md-2"></div>
+                </section>
+                <section class="row graphResults">
+                    <div class="col-md-6">
+                        <h2 align="left">Results</h2>
+                        <h4 align="left">First Time School with a Second Place Finish</h4>
+
+                        <p align="left">The EcoCAR2 competition was a 3-year competition to hybridize a donated Chevy
+                            Malibu. EcoCAR2 competition structure was broken up into design, integration and refinement.
+                            The UW EcoCAR2 team was the only team to complete our physical integration by the end of
+                            year 2 and had a fully functional car at competition that year.
+                            This gave us more time for vehicle refinements, introducing state of the art emissions
+                            control and vehicle modes of operation.
+                            The end result was a 2nd place finish overall, unprecedented for a first time
+                            competitor.</p>
+
+                        <p align="left"> The University of Washington’s EcoCAR2 team won ten different awards at the
+                            final competition at the end of year 3, coming in 2nd overall. Most notably, we took 1st in
+                            0-60 mph acceleration,
+                            1st in 50-70 mph acceleration, and 2nd in the freescale innovation award.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="imgs/vts.PNG" height="50%" width="100%" class="pull-right">
+                    </div>
+                </section>
+                <hr>
+                <section class="row ppvWebVersion">
+                    <div class="col-md-6">
+                        <img src="imgs/ttr.png" height="40%" width="100%" class="pull-left">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 align="left">TTR PHEV</h2>
+                        <h4 align="left">That stands for Through-The-Road Plug-in Hybrid Electric Vehicle</h4>
+
+                        <p align="left">The UW EcoCAR2 team has decided to convert their 2013 Chevy Malibu into a
+                            Through-The-Road (TTR) Plug-in Hybrid Electric Vehicle (PHEV). In this architecture,
+                            a diesel engine is connected to the front axel and an electric motor is connected to the
+                            rear axel.
+                            This architecture provides simpler component packaging, more power, all-wheel-drive, and
+                            better weight distribution, while still enabling the vehicle to get the equivalent of 59
+                            MPG.</p>
+                    </div>
+                </section>
+                <hr>
+                <section class="row fuel">
+                    <div class="col-md-6">
+                        <h2 align="left">Bio-Diesel and Electricity</h2>
+                        <h4 align="left">The next generation of American vehicles will likely use Diesel.</h4>
+
+                        <p align="left">With a 44 mile electric range, most drivers could drive to work, charge, and
+                            drive home without ever having to pay for a drop of fuel.</p>
+                        The fact is diesel engines are more efficient at converting chemical energy into mechanical
+                        energy.
+                        Diesel is also more energy dense. These two facts mean less CO2 is produced and drivers can go
+                        farther on a single tank.</p>
+                        <p align="left"> The UW EcoCAR2 team has chosen to use Diesel that is made of 20% biological
+                            material. Unlike ethanol, this material does not have to be corn.
+                            It could be alga, yard waste, or old vegetable oil. This helps eliminate some of the
+                            political and economic issues associated with corn based ethanol production.</p>
+
+                        <p align="left"> Bio-Diesel does have its disadvantages. Most notably, it produces more NOx
+                            emissions (a key ingredient in smog). To combate this, the UW
+                            EcoCAR2 team is installing urea injection into the exhaust system. The urea reacts with NOx
+                            and renders it harmless. </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="imgs/fuel.png" height="40%" width="100%" class="pull-left">
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </section>
+</main>
+</body>
+
+<footer>
+    <div class="container">
+        <section class="row About">
+            <div class="col-md-1">
+            </div>
+            <!--col-md-1-->
+            <div class="col-md-3">
+                <div id="about">
+                    <h3>Contact the UW EcoCAR3 Team</h3>
+
+                    <p>If interested in becoming a sponsor, making a donation, or have additional questions about the UW
+                        EcoCAR team,
+                        please contact our Business Manager Alex or if you would like to join the team, please apply
+                    </p>
+                </div>
+                <!--about-->
+            </div>
+            <!--col-md-3-->
+            <div class="col-md-1">
+            </div>
+            <!--col-md-1-->
+            <div class="col-md-3">
+                <div id="leaveMessage">
+                    <h3>Leave a Message</h3>
+
+                    <?php
+                        if (isset($_REQUEST['emailForm'])) {
+                            $admin_email = "uwecocar3@gmail.com";
+                            $email $_REQUEST['contactemail'];
+                            $subject = $_REQUEST['contactname'];
+                            $comment = $_REQUEST['message'];
+                            mail($admin_email, "$subject", $comment, "From:" . $email);
+                        }
+                    ?>
+
+                    <form method="post" name="emailForm" id="emailForm">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="contactname"
+                                   placeholder="Please enter your name"
+                                   width="50%"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="contactemail"
+                                   placeholder="Please enter your email"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                        <textarea name="message" id="message" class="form-control" rows="4" cols="25"
+                                  placeholder="Please enter your message"></textarea>
+                        </div>
+
+                        <div>
+                            <button id="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!--leaveMessage-->
+    </div>
+    <!--col-md-3-->
+    <div class="col-md-1">
+    </div>
+    <!--col-md-1-->
+    <div class="col-md-2">
+        <h3>Follow the Team</h3>
+        <a href="www.facebook.com/UWEcoCAR2"><img src="imgs/Facebook.png" width="25%" height="6%"
+                                                  class="pull-left"></a>
+        <a href="www.twitter.com/uwecocar2"><img src="imgs/Twitter.png" width="25%" height="6%"
+                                                 class="pull-left"></a>
+        <a href="mailto:uwecocar3@gmail.com"><img src="imgs/Gmail.png" width="25%" height="6%"
+                                                  class="pull-left"></a>
+    </div>
+    <!--col-md-2-->
+    <div class="col-md-1">
+    </div>
+    <!--col-md-1-->
+    </section>
+    </div>
+</footer>
+
+

@@ -24,3 +24,12 @@
 
  } )();
 */
+
+$(document).ready(function() {
+  $('#submit').click(function() {
+     alert('Message has been sent. Thank you for contacting us');
+     document.getElementById('contactname').value = "";
+     document.getElementById('contactemail').value = "";
+     document.getElementById('message').value = "";
+  });
+});

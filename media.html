@@ -25,7 +25,7 @@
                     <li data-menuanchor="5" id="mediaMenu"><a href="media.html#">Media</a></li>
                     <li data-menuanchor="6" id="applyMenu"><a href="https://catalyst.uw.edu/catalyst/chooser/1d95b7f6290c057640861012dec50856">Apply</a></li>
                     <li data-menuanchor="7" id="ec2Menu"><a href="ec2.html#">EC2</a></li>
-                    <li data-menuanchor="9" id="contactMenu"><a href="contacts.html#">Contact Us</a></li>
+                    <li data-menuanchor="8" id="contactMenu"><a href="contacts.html#">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +39,7 @@ will not go across the page. This will leave some white space on the edges next 
 <body>
 <main class="container-fluid">
 
-    <!--This is a placeholder image that doesn't actually show up. Rather it allows the background image to show up in order
+    <!--This is a placeholder image that doesn't actually show up in the html. Rather it allows the background image to show up in order
     to maintain the same background as the content field. So the showing background image is in the css labeled "imageHere". Since CSS
     is required for it to show, please name your image as pageTile + "imageHere" so it won't be accidentally overwritten.
     -->
@@ -47,8 +47,8 @@ will not go across the page. This will leave some white space on the edges next 
         <div class="container">
             <div class="col-lg-1" id="sideBar1">
             </div>
-            <div class="col-lg-10" id="imageHere">
-                <img src="imgs/CameroLarge2.jpg" height="66%" width="100%" id="image">
+            <div class="col-lg-10" id="mediaImageHere">
+                <img src="imgs/CameroLarge2.jpg" height="55%" width="100%" id="image">
             </div>
             <div class="col-lg-1" id="sideBar2">
             </div>
@@ -61,7 +61,6 @@ will not go across the page. This will leave some white space on the edges next 
         <div class="container">
             <div class="col-lg-1"></div>
             <div class="col-lg-10" id="titleHere">
-                <h1>EC3 Team in the News</h1>
             </div>
             <div class="col-lg-1"></div>
         </div>
@@ -73,8 +72,33 @@ will not go across the page. This will leave some white space on the edges next 
     <section class="row Content">
         <div class="container">
             <div class="col-lg-1"></div>
-            <div class="col-lg-10" id="textHere">
-
+            <div class="col-lg-10" id="mediatextHere">
+                <div class="col-md-6">
+                    <h3 align="center">UW EcoCAR in the News</h3>
+                    <hr>
+                    <h5 align="left"><i>December 2, 2012</i></h5>
+                    <p><a href="http://www.seattletimes.com/seattle-news/uw-students-turning-2013-malibu-into-fuel-saving-dual-motor-hybrid/"><b>
+                        UW students turning 2013 Malibu into fuel-saving dual-motor hybrid </b></a><br>
+                    University of Washington engineering students are turning a gas-powered car into an unusual electric-diesel hybrid
+                        as part of a competition sponsored by the U.S. Department of Energy.</p>
+                    <hr>
+                    <h5 align="left"><i>April 19, 2012</i></h5>
+                    <p><a href="http://www.king5.com/story/local/2015/05/26/13099690/"><b>UW students rev up for green car competition</b></a><br>
+                    They didn't have much time or experience but it was an opportunity they could not let get away.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 align="center">Upcoming Events</h3>
+                    <hr>
+                    <h5 align="left"><i>Week of May 26th, 2015 - May 29th, 2015</i></h5>
+                    <p align="left">None Scheduled</p>
+                    <hr>
+                    <h5 align="left"><i>Week of June 1st, 2015 - June 5th, 2015</i></h5>
+                    <p align="left">None Scheduled</p>
+                    <hr>
+                    <h5 align="left"><i>Week of June 8th, 2015 - June 12th, 2015</i></h5>
+                    <p align="left">None Scheduled</p>
+                    <hr>
+                </div>
             </div>
             <div class="col-lg-1"></div>
         </div>
@@ -83,18 +107,87 @@ will not go across the page. This will leave some white space on the edges next 
 </main>
 </body>
 
-<footer class="container-fluid">
-    <section class="row footer">
-        <div class="container">
-            <div class="row Links">
-                <div class="col-md-9"></div>
-                <div class="col-md-3">
-                    <a href="www.facebook.com/UWEcoCAR2"><img src="imgs/Facebook.png" width="16%" height="6%" class="pull-right"></a>
-                    <a href="www.twitter.com/uwecocar2"><img src="imgs/Twitter.png" width="16%" height="6%" class="pull-right"></a>
-                    <a href="mailto:uwecocar3@gmail.com"><img src="imgs/Gmail.png" width="16%" height="6%" class="pull-right"></a>
+<footer>
+    <div class="container">
+        <section class="row About">
+            <div class="col-md-1">
+            </div>
+            <!--col-md-1-->
+            <div class="col-md-3">
+                <div id="about">
+                    <h3>Contact the UW EcoCAR3 Team</h3>
+
+                    <p>If interested in becoming a sponsor, making a donation, or have additional questions about the UW
+                        EcoCAR team,
+                        please contact our Business Manager Alex or if you would like to join the team, please apply
+                    </p>
+                </div>
+                <!--about-->
+            </div>
+            <!--col-md-3-->
+            <div class="col-md-1">
+            </div>
+            <!--col-md-1-->
+            <div class="col-md-3">
+                <div id="leaveMessage">
+                    <h3>Leave a Message</h3>
+
+                    <?php
+                        if (isset($_REQUEST['emailForm'])) {
+                            $admin_email = "uwecocar3@gmail.com";
+                            $email $_REQUEST['contactemail'];
+                            $subject = $_REQUEST['contactname'];
+                            $comment = $_REQUEST['message'];
+                            mail($admin_email, "$subject", $comment, "From:" . $email);
+                        }
+                    ?>
+
+                    <form method="post" name="emailForm" id="emailForm">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="contactname"
+                                   placeholder="Please enter your name"
+                                   width="50%"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="contactemail"
+                                   placeholder="Please enter your email"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Message</label>
+                        <textarea name="message" id="message" class="form-control" rows="4" cols="25"
+                                  placeholder="Please enter your message"></textarea>
+                        </div>
+
+                        <div>
+                            <button id="submit">Send Message</button>
+                    </form>
                 </div>
             </div>
-        </div>
+            <!--leaveMessage-->
+    </div>
+    <!--col-md-3-->
+    <div class="col-md-1">
+    </div>
+    <!--col-md-1-->
+    <div class="col-md-2">
+        <h3>Follow the Team</h3>
+        <a href="www.facebook.com/UWEcoCAR2"><img src="imgs/Facebook.png" width="25%" height="6%"
+                                                  class="pull-left"></a>
+        <a href="www.twitter.com/uwecocar2"><img src="imgs/Twitter.png" width="25%" height="6%"
+                                                 class="pull-left"></a>
+        <a href="mailto:uwecocar3@gmail.com"><img src="imgs/Gmail.png" width="25%" height="6%"
+                                                  class="pull-left"></a>
+    </div>
+    <!--col-md-2-->
+    <div class="col-md-1">
+    </div>
+    <!--col-md-1-->
     </section>
+    </div>
 </footer>
 

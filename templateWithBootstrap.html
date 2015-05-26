@@ -27,7 +27,7 @@
                             href="https://catalyst.uw.edu/catalyst/chooser/1d95b7f6290c057640861012dec50856">Apply</a>
                     </li>
                     <li data-menuanchor="7" id="ec2Menu"><a href="ec2.html#">EC2</a></li>
-                    <li data-menuanchor="9" id="contactMenu"><a href="contacts.html#">Contact Us</a></li>
+                    <li data-menuanchor="8" id="contactMenu"><a href="contacts.html#">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -41,7 +41,7 @@ will not go across the page. This will leave some white space on the edges next 
 <body>
 <main class="container-fluid">
 
-    <!--This is a placeholder image that doesn't actually show up. Rather it allows the background image to show up in order
+    <!--This is a placeholder image that doesn't actually show up in the html. Rather it allows the background image to show up in order
     to maintain the same background as the content field. So the showing background image is in the css labeled "imageHere". Since CSS
     is required for it to show, please name your image as pageTile + "imageHere" so it won't be accidentally overwritten.
 
@@ -53,7 +53,7 @@ will not go across the page. This will leave some white space on the edges next 
             <div class="col-lg-1" id="sideBar1">
             </div>
             <div class="col-lg-10" id="imageHere">
-                <img src="imgs/CameroLarge2.jpg" height="45%" width="100%" id="image">
+                <img src="imgs/CameroLarge2.jpg" height="55%" width="100%" id="image">
             </div>
             <div class="col-lg-1" id="sideBar2">
             </div>
@@ -139,27 +139,35 @@ will not go across the page. This will leave some white space on the edges next 
                 <div id="leaveMessage">
                     <h3>Leave a Message</h3>
 
-                    <form method="post" name="emailForm" action="email.php">
+                    <?php
+                        if (isset($_REQUEST['emailForm'])) {
+                            $admin_email = "uwecocar3@gmail.com";
+                            $email $_REQUEST['contactemail'];
+                            $subject = $_REQUEST['contactname'];
+                            $comment = $_REQUEST['message'];
+                            mail($admin_email, "$subject", $comment, "From:" . $email);
+                        }
+                    ?>
+
+                    <form method="post" name="emailForm" id="emailForm">
                         <div class="form-group">
                             <label for="name">
                                 Name</label>
                             <input type="text" class="form-control" id="contactname"
                                    placeholder="Please enter your name"
-                                   width="50%"
-                                   required/>
+                                   width="50%"/>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" class="form-control" id="contactemail"
-                                   placeholder="Please enter your email"
-                                   required/>
+                                   placeholder="Please enter your email"/>
                         </div>
 
                         <div class="form-group">
                             <label for="name">Message</label>
                         <textarea name="message" id="message" class="form-control" rows="4" cols="25"
-                                  placeholder="Please enter your message" required></textarea>
+                                  placeholder="Please enter your message"></textarea>
                         </div>
 
                         <div>
